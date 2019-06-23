@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,29 +15,85 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="I_Am_Poor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I Am Poor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gu5-dk-9AN">
-                                <rect key="frame" x="92" y="173" width="191" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Don't Ask Me For Money" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nCJ-Nt-13r">
-                                <rect key="frame" x="20" y="87" width="334" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="coal" translatesAutoresizingMaskIntoConstraints="NO" id="jBb-85-aMz">
-                                <rect key="frame" x="52" y="269" width="270" height="270"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TbP-Yq-qUW" userLabel="Middle Container">
+                                <rect key="frame" x="67" y="157" width="240" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I Am Poor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gu5-dk-9AN">
+                                        <rect key="frame" x="24.666666666666671" y="45" width="191" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="38" id="Bdd-hn-QE5"/>
+                                            <constraint firstAttribute="width" constant="191" id="RpS-Tg-DaV"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Gu5-dk-9AN" firstAttribute="centerX" secondItem="TbP-Yq-qUW" secondAttribute="centerX" id="85S-dO-Jek"/>
+                                    <constraint firstAttribute="width" constant="240" id="FI1-W7-jqp"/>
+                                    <constraint firstItem="Gu5-dk-9AN" firstAttribute="centerY" secondItem="TbP-Yq-qUW" secondAttribute="centerY" id="Kdd-Bf-qWL"/>
+                                    <constraint firstAttribute="height" constant="128" id="fdM-7C-dXO"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MwZ-cN-mSs" userLabel="Top Container">
+                                <rect key="frame" x="0.0" y="103" width="375" height="49"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't Ask Me For Money" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nCJ-Nt-13r">
+                                        <rect key="frame" x="20.666666666666657" y="7" width="334" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="334" id="DHQ-e9-WRt"/>
+                                            <constraint firstAttribute="height" constant="35" id="LRY-KX-M0E"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="130-hQ-GUs"/>
+                                    <constraint firstAttribute="height" constant="49" id="34j-qq-1M4"/>
+                                    <constraint firstItem="nCJ-Nt-13r" firstAttribute="centerY" secondItem="MwZ-cN-mSs" secondAttribute="centerY" id="KOu-An-qdq"/>
+                                    <constraint firstItem="nCJ-Nt-13r" firstAttribute="centerX" secondItem="MwZ-cN-mSs" secondAttribute="centerX" id="l5K-bb-iKe"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5RH-Ez-yOg" userLabel="Bottom Container">
+                                <rect key="frame" x="52" y="310" width="270" height="340"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coal" translatesAutoresizingMaskIntoConstraints="NO" id="jBb-85-aMz">
+                                        <rect key="frame" x="0.0" y="35" width="270" height="270"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="270" id="EJd-PD-PcN"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="270" id="Iqd-8V-fh7"/>
+                                            <constraint firstAttribute="height" constant="270" id="frV-8P-Efs"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="270" id="hKF-n4-Xen"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="jBb-85-aMz" firstAttribute="centerX" secondItem="5RH-Ez-yOg" secondAttribute="centerX" id="2Jy-Zr-c1f"/>
+                                    <constraint firstAttribute="height" constant="253" id="byw-U1-SRh"/>
+                                    <constraint firstAttribute="width" constant="270" id="es4-vz-k44"/>
+                                    <constraint firstItem="jBb-85-aMz" firstAttribute="centerY" secondItem="5RH-Ez-yOg" secondAttribute="centerY" id="n6j-3B-dWu"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5RH-Ez-yOg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="52" id="1LD-hp-u6i"/>
+                            <constraint firstItem="5RH-Ez-yOg" firstAttribute="top" secondItem="TbP-Yq-qUW" secondAttribute="bottom" constant="25" id="1yH-t0-2qz"/>
+                            <constraint firstItem="MwZ-cN-mSs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="EOE-Nv-wVt"/>
+                            <constraint firstItem="MwZ-cN-mSs" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="aOa-Nx-AuA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TbP-Yq-qUW" secondAttribute="trailing" constant="68" id="cgC-zq-qeP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5RH-Ez-yOg" secondAttribute="bottom" constant="128" id="ha1-ll-LeF"/>
+                            <constraint firstItem="MwZ-cN-mSs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="59" id="jWe-wT-txt"/>
+                            <constraint firstItem="TbP-Yq-qUW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="kFi-Ag-r2m"/>
+                            <constraint firstItem="TbP-Yq-qUW" firstAttribute="top" secondItem="MwZ-cN-mSs" secondAttribute="bottom" constant="5" id="nAP-0V-psQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5RH-Ez-yOg" secondAttribute="trailing" constant="53" id="nk7-gm-cfK"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -47,6 +103,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="coal" width="170.5" height="170.5"/>
+        <image name="coal" width="170.66667175292969" height="170.66667175292969"/>
     </resources>
 </document>
